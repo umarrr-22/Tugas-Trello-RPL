@@ -12,7 +12,7 @@ $db_name  = "sports_club"; // Nama database
 $con = mysqli_connect($host, $username, $password, $db_name);
 
 // Periksa koneksi
-if (mysqli_connect_errno($con)) {
+if (mysqli_connect_errno()) {
     // Jika gagal, tampilkan pesan error dan berhenti
     die("Gagal terhubung ke MySQL: " . mysqli_connect_error());
 }
